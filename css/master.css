@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:  rgb(16, 14, 14);
+}
+
+.container{
+  width: 60%;
+  margin: 0 auto;
+}
+
+#palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+
+.color-container {
+  flex: 1;
+  margin: 4px;
+  padding: 4px;
+  text-align: center;
+}
+
+.color-circle {
+  background: rgb(165, 0, 255);
+  border-radius: 100%;
+  width: 100%;
+  padding-bottom: 100%;
+  transition: background 0.5s;
+}
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  color: rgb(130, 130, 130);
+  text-align: center;
+  margin-top: 20px;
+}
+
+.message {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(130, 130, 130);
+  font-size: 20px;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+.buttons {
+  flex: 1;
+  text-align: center;
+}
+
+.buttons button {
+  height: 50px;
+  width: 90px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: white;
+  background-color: rgb(130, 130, 130);
+}
+
+.buttons button:hover {
+  background-color: rgb(60, 60, 60);
+  color: black;
+  transition: all 0.5s;
+}
+
+.buttons .selected {
+  height: 48px;
+  width: 88px;
+  border: 2px solid white;
+  background-color: rgb(30, 30, 30);
+  font-weight: bold;
+}
